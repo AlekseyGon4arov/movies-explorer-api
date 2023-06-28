@@ -114,7 +114,7 @@ const deleteMovieValidation = {
     _id: Joi.string().hex().length(24).messages({
       'string.hex': 'Некорректный id',
     }),
-  }),
+  }).required(),
 };
 
 module.exports = {
